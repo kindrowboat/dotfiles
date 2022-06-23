@@ -1,0 +1,36 @@
+set header_cache = ~/.cache/neomutt
+set message_cachedir = "~/.cache/neomutt"
+
+# unset imap_passive
+# set imap_keepalive = 300
+# set mail_check = 120
+# set ssl_force_tls = yes
+
+set use_from = yes
+set realname = 'Stef Dunlap'
+
+set mailcap_path 	= ~/.config/neomutt/mailcap
+
+################################################################################
+# imap.cfg
+
+set my_gmail_user = apocryphalauthor@gmail.com
+set my_migadu_user = stef@kindrobot.ca
+
+source ./secrets.cfg
+
+#source ./imap_migadu.cfg
+#source ./imap_tilde_team.cfg
+source ./imap_skylab.cfg
+
+save-hook . "${my_imap}Archives/`date +%Y`"
+
+macro index <F6> "<enter-command>unmailboxes *<enter><enter-command>source ~/.config/neomutt/imap_migadu.cfg<enter><sync-mailbox>"
+macro index <F7> "<enter-command>unmailboxes *<enter><enter-command>source ~/.config/neomutt/imap_gmail.cfg<enter><sync-mailbox>"
+macro index <F8> "<enter-command>unmailboxes *<enter><enter-command>source ~/.config/neomutt/imap_tilde_team.cfg<enter><sync-mailbox>"
+macro index <F9> "<enter-command>unmailboxes *<enter><enter-command>source ~/.config/neomutt/imap_skylab.cfg<enter><sync-mailbox>"
+
+set imap_check_subscribed = yes
+set imap_authenticators = plain
+
+set my_imap_done = true
