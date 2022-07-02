@@ -1,0 +1,80 @@
+
+IMAPStore kindrobot-remote
+Host imap.migadu.com
+Port 993
+User stef@kindrobot.ca
+PassCmd "pass show muw/stef@kindrobot.ca"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore kindrobot-local
+Subfolders Verbatim
+Path ~/.local/share/mail/kindrobot/
+Inbox ~/.local/share/mail/kindrobot/INBOX
+Flatten .
+
+Channel kindrobot
+Expunge Both
+Far  :kindrobot-remote:
+Near :kindrobot-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore gmail-remote
+Host imap.gmail.com
+Port 993
+User apocryphalauthor@gmail.com
+PassCmd "pass show muw/apocryphalauthor@gmail.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore gmail-local
+Subfolders Verbatim
+Path ~/.local/share/mail/gmail/
+Inbox ~/.local/share/mail/gmail/INBOX
+Flatten .
+
+Channel gmail
+Expunge Both
+Far  :gmail-remote:
+Near :gmail-local:
+Patterns * !"[Gmail]/All Mail" !"[Gmail]/Important"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+
+IMAPStore team-remote
+Host imap.tilde.team
+Port 993
+User kindrobot
+PassCmd "pass show muw/kindrobot@tilde.team"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore team-local
+Subfolders Verbatim
+Path ~/.local/share/mail/team/
+Inbox ~/.local/share/mail/team/INBOX
+Flatten .
+
+Channel team
+Expunge Both
+Far  :team-remote:
+Near :team-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
