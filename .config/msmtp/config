@@ -1,0 +1,33 @@
+defaults
+auth on
+tls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile /home/kindrobot/.cache/msmtp/msmtp.log
+
+account kindrobot
+host smtp.migadu.com
+port 587
+from stef@kindrobot.ca
+user stef@kindrobot.ca
+passwordeval "pass show muw/stef@kindrobot.ca"
+
+# End profile
+
+account gmail
+host smtp.gmail.com
+port 587
+from apocryphalauthor@gmail.com
+user apocryphalauthor@gmail.com
+passwordeval "pass show muw/apocryphalauthor@gmail.com"
+
+# End profile
+
+account team
+host smtp.tilde.team
+port 587
+from kindrobot@tilde.team
+user kindrobot
+passwordeval "pass show muw/kindrobot@tilde.team"
+
+# End profile
+
