@@ -31,3 +31,12 @@ passwordeval "pass show muw/kindrobot@tilde.team"
 
 # End profile
 
+account hello
+host smtp.migadu.com
+port 587
+from hello@kindrobot.ca
+user hello@kindrobot.ca
+passwordeval "pass show muw/hello@kindrobot.ca"
+
+# End profile
+
