@@ -44,7 +44,7 @@ Channel gmail
 Expunge Both
 Far  :gmail-remote:
 Near :gmail-local:
-Patterns * !"[Gmail]/All Mail" !"[Gmail]/Important"
+Patterns INBOX Drafts Trash Sent "Archives.*"
 Create Both
 SyncState *
 MaxMessages 0

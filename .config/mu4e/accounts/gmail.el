@@ -11,6 +11,7 @@
           (mu4e-drafts-folder               . "/gmail/Drafts")
           (mu4e-trash-folder                . "/gmail/Trash")
           (mu4e-sent-folder                 . "/gmail/Sent")
+          (mu4e-refile-folder               . "/gmail/Archives.2022")
           (mu4e-maildir-shortcuts           . (("/gmail/INBOX" . ?i)
                                                ("/gmail/Drafts"         . ?d)
                                                ("/gmail/Sent" . ?s)))

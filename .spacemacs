@@ -592,6 +592,9 @@ before packages are loaded."
            :recursive t
            :publishing-function org-publish-attachment)
           ))
+  (setq mu4e-change-filenames-when-moving t)
+  (setq mu4e-update-interval 300)
+
 )
 
 
