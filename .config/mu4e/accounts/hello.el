@@ -11,6 +11,7 @@
           (mu4e-drafts-folder               . "/hello/Drafts")
           (mu4e-trash-folder                . "/hello/Trash")
           (mu4e-sent-folder                 . "/hello/Sent")
+          (mu4e-refile-folder               . "/hello/Archives.2022")
           (mu4e-maildir-shortcuts           . (("/hello/INBOX" . ?i)
                                                ("/hello/Drafts"         . ?d)
                                                ("/hello/Sent" . ?s)))

@@ -4,14 +4,6 @@ tls on
 tls_trust_file /etc/ssl/certs/ca-certificates.crt
 logfile /home/kindrobot/.cache/msmtp/msmtp.log
 
-account kindrobot
-host smtp.migadu.com
-port 587
-from stef@kindrobot.ca
-user stef@kindrobot.ca
-passwordeval "pass show muw/stef@kindrobot.ca"
-
-# End profile
 
 account gmail
 host smtp.gmail.com
@@ -37,6 +29,15 @@ port 587
 from hello@kindrobot.ca
 user hello@kindrobot.ca
 passwordeval "pass show muw/hello@kindrobot.ca"
+
+# End profile
+
+account stef
+host smtp.migadu.com
+port 587
+from stef@kindrobot.ca
+user stef@kindrobot.ca
+passwordeval "pass show muw/stef@kindrobot.ca"
 
 # End profile
 
