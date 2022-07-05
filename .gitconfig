@@ -1,0 +1,9 @@
+[alias]
+	ci = commit
+	co = checkout
+	s = status
+[user]
+	email = stef@kindrobot.ca
+	name = Stef Dunlap
+[core]
+	editor = nvim
