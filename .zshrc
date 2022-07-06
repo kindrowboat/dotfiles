@@ -13,3 +13,8 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR"/ssh-agent.socket
 
 # enable if using nvm for JS development
 #source /usr/share/nvm/init-nvm.sh
+
+source $HOME/bin/zsh-z.plugin.zsh
+zstyle ':completion:*' menu select
+
+autoload -U compinit && compinit
