@@ -19,4 +19,6 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR"/ssh-agent.socket
 source $HOME/bin/zsh-z.plugin.zsh
 zstyle ':completion:*' menu select
 
+eval $(thefuck --alias)
+
 autoload -U compinit && compinit
