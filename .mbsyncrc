@@ -7,7 +7,6 @@ User apocryphalauthor@gmail.com
 PassCmd "pass show muw/apocryphalauthor@gmail.com"
 AuthMechs LOGIN
 SSLType IMAPS
-CertificateFile /etc/ssl/certs/ca-certificates.crt
 
 MaildirStore gmail-local
 Subfolders Verbatim
@@ -34,7 +33,6 @@ User kindrobot
 PassCmd "pass show muw/kindrobot@tilde.team"
 AuthMechs LOGIN
 SSLType IMAPS
-CertificateFile /etc/ssl/certs/ca-certificates.crt
 
 MaildirStore team-local
 Subfolders Verbatim
@@ -62,7 +60,6 @@ User hello@kindrobot.ca
 PassCmd "pass show muw/hello@kindrobot.ca"
 AuthMechs LOGIN
 SSLType IMAPS
-CertificateFile /etc/ssl/certs/ca-certificates.crt
 
 MaildirStore hello-local
 Subfolders Verbatim
@@ -88,7 +85,6 @@ User stef@kindrobot.ca
 PassCmd "pass show muw/stef@kindrobot.ca"
 AuthMechs LOGIN
 SSLType IMAPS
-CertificateFile /etc/ssl/certs/ca-certificates.crt
 
 MaildirStore stef-local
 Subfolders Verbatim

@@ -1,7 +1,6 @@
 defaults
 auth on
 tls on
-tls_trust_file /etc/ssl/certs/ca-certificates.crt
 logfile /home/kindrobot/.cache/msmtp/msmtp.log
 
 
