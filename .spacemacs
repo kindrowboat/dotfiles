@@ -53,6 +53,7 @@ This function should only modify configuration layer settings."
      mu4e
      multiple-cursors
      org
+     pdf-tools
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
