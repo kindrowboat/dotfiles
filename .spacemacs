@@ -598,7 +598,7 @@ before packages are loaded."
   ;; prevent UID name problems
   (setq mu4e-change-filenames-when-moving t)
   ;; auto check for mail in backgroound
-  (setq mu4e-update-interval 300)
+  ;; (setq mu4e-update-interval 300)
   (setq mu4e-index-update-in-background t)
   ;; enable inline images
   (setq mu4e-view-show-images t)
