@@ -53,7 +53,6 @@ This function should only modify configuration layer settings."
      mu4e
      multiple-cursors
      org
-     pdf-tools
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
@@ -602,6 +601,11 @@ before packages are loaded."
   (setq mu4e-index-update-in-background t)
   ;; enable inline images
   (setq mu4e-view-show-images t)
+  (defun git-sync ()
+    "Commits, pulls, and pushes current project"
+    (interactive)
+    (shell-command "$HOME/bin/git-sync"))
+  (spacemacs/set-leader-keys "os" 'git-sync)
 )
 
 
